@@ -131,7 +131,7 @@ public class Main {
 	public static void main(String[] args) {
 		Acm acm = new Acm();
 		acm.inputData();
-		acm.heapSort();
+		acm.bubbleSort();
 		acm.showResult();
 	}
 
