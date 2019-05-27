@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		">
+	<bean id="dataSourceId"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUrl">
+			<value>jdbc:mysql://47.106.206.150:3306/wwj?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8</value>
+		</property>
+		<property name="user" value="wwj" />
+		<property name="password" value="toor" />
+		<property name="initialPoolSize" value="5" />
+		<property name="minPoolSize" value="10" />
+		<property name="maxPoolSize" value="30" />
+
+	</bean>
+
+
+</beans>

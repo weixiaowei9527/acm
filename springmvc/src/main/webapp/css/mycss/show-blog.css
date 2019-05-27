@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+	background-color: #eee;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	padding: px;
+	width: 60%;
+	background-color: #fff
+}
+
+li h3 {
+	width: 100%;
+	text-align: center;
+}
+
+.p_content {
+	padding: 15px;
+	color: #777;
+	line-height: 24px;
+}
+.ptitle{
+color: #00a67c;
+    text-decoration: none
+        font-size: 20px;
+
+    font-weight: 400;
+  
+
+    line-height: 25px;
+}
+.fenye {
+	border: 1px solid #e1e2e3;
+	height: 34px;
+}
+.fenye{
+height: 34px;
+    padding: 0 18px;
+    border: 1px solid #e1e2e3;
+}

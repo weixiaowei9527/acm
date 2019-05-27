@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		">
+
+
+
+	<bean id="dataSourceId"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<!-- DriverManagerDataSource建立连接是只要有请求就新建一个connection,根本没有连接池的作用 -->
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://47.106.206.150:3306/wwj?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSl=false&amp;autoReconnect=true&amp;failOverReadOnly=false
+			</value>
+		</property>
+		<property name="username">
+			<value>wwj</value>
+		</property>
+		<property name="password">
+			<value>toor</value>
+		</property>
+	</bean>
+	
+</beans>
